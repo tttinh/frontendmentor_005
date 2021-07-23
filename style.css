@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-neutral-900: hsl(234, 12%, 34%);
+  --clr-neutral-400: hsl(229, 6%, 66%);
+  --clr-neutral-100: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--clr-neutral-900);
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-md {
+  font-size: 1.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lead {
+  font-size: 1rem;
+}
+
+.fw-light {
+  font-weight: 200;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-neutral-400);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  margin-top: 3rem;
+  width: min(90%, 500px);
+}
+
+.description {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+main {
+  margin: 3rem 0;
+
+  display: grid;
+  gap: 2rem;
+}
+
+.center-column {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 320px;
+}
+
+.card > img {
+    margin-top: 1rem;
+    float: right;
+}
+
+.card-red {
+  border-top: 4px solid var(--clr-red);
+}
+
+.card-cyan {
+  border-top: 4px solid var(--clr-cyan);
+}
+
+.card-orange {
+  border-top: 4px solid var(--clr-orange);
+}
+
+.card-blue {
+  border-top: 4px solid var(--clr-blue);
+}
+
+.card__desc {
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width:1100px) {
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .text-lg {
+        font-size: 2rem;
+    }
+
+    main > *:first-child,
+    main > *:last-child {
+        place-self: center;
+    }
+
+    
+}
