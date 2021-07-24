@@ -20,7 +20,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/profile-card-component-AgrPSFsMJ)
+- [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section-mxIeptIBe)
 - [Live Site URL](https://tttinh.github.io/frontendmentor_005/)
 
 ## My process
